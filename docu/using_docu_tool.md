@@ -71,6 +71,13 @@ The easiest solution is to publish the API Doc portal on GitHub pages as this se
 
 5. Call the following command: `NODE_ENV=prod npm run compile`
 
-6. Call the following command: `gulp preparePushResult && gulp pushResult`
+*on Windows you should run this command:*
+
+```
+SET NODE_ENV=prod
+npm run compile
+```
+
+6. Call the following command: `npm run preparePushResult && npm run pushResult`
 
 7. Once the push is completed, open in the browser the following link: http://your_github_username.github.io
